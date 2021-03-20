@@ -33,11 +33,11 @@ ExtentReports extent;
 		reporter.config().setReportName("Automation Test Results");
 		extent = new ExtentReports();
 		extent.attachReporter(reporter);
+		extent.setSystemInfo("Tester", "");
 	}
 	@Test
 	public void birnger() {
 		ExtentTest test=extent.createTest("birnger");
-		
 		driver.findElement(By.name("q")).sendKeys("reddit"+Keys.ENTER);
 		extent.flush();
 	}
