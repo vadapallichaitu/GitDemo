@@ -39,6 +39,7 @@ ExtentReports extent;
 	public void birnger() {
 		ExtentTest test=extent.createTest("birnger");
 		driver.findElement(By.name("q")).sendKeys("reddit"+Keys.ENTER);
+		test.addScreenCaptureFromPath("s");
 		extent.flush();
 	}
 	@AfterSuite
