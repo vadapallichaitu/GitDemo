@@ -33,7 +33,7 @@ ExtentReports extent;
 		reporter.config().setReportName("Automation Test Results");
 		extent = new ExtentReports();
 		extent.attachReporter(reporter);
-		extent.setSystemInfo("Tester", "");
+		extent.setSystemInfo("Tester", "chaitu");
 	}
 	@Test
 	public void birnger() {
