@@ -36,8 +36,8 @@ ExtentReports extent;
 		extent.setSystemInfo("Tester", "chaitu");
 	}
 	@Test
-	public void birnger() {
-		ExtentTest test=extent.createTest("birnger");
+	public void bringer() {
+		ExtentTest test=extent.createTest("bringer");
 		driver.findElement(By.name("q")).sendKeys("reddit"+Keys.ENTER);
 		test.addScreenCaptureFromPath(System.getProperty("user.dir")+"\\snapshots\\img.jpg");
 		extent.flush();
