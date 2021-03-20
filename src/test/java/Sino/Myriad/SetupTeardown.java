@@ -42,6 +42,13 @@ ExtentReports extent;
 		test.addScreenCaptureFromPath(System.getProperty("user.dir")+"\\snapshots\\img.jpg");
 		extent.flush();
 	}
+	@Test
+	public void stinger() {
+		ExtentTest test=extent.createTest("stinger");
+		driver.findElements(By.tagName("h3")).get(0).click();
+		test.addScreenCaptureFromPath(System.getProperty("user.dir")+"\\snapshots\\img.jpg");
+		extent.flush();
+	}
 	@AfterSuite
 	public void Teardown() {
 		try {
